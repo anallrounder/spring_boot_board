@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Title</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p th:object ="${board}"></p>
+    <p th:text ="${board.bname}">디폴트</p>
+    <p th:text ="*{bcontent}"></p>
+    <!-- <p>디폴트</p> -->
+    ====================================
+    
+    <div th:object ="${board}">
+	    <p th:text ="${board.bname}"></p>
+	    <p th:text ="*{bcontent}"></p>
+    </div>
+    
+   ====================================
+   
+<!--    <h1 th:text="#{content.id}"></h1>
+   <h1 th:text="#{content.name}"></h1> -->
+
+	<h1 th:text="${#temporals.format(localDateTime, 'yyyy-MM-dd HH:mm')}"></h1>
+	<!-- 이미 만들어진걸 가져와서 꺼내오는일이 많다. 
+		#dates, #calendars #number #strings ...등등등 많다.
+	-->   
+</body>
+</html> 

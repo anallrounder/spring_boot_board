@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>타임리프</h1>
+
+	<table border="1">
+		<thead>
+			<tr>
+				<th>번호</th>
+				<th>이름</th>
+				<th>제목</th>
+				<th>날짜</th>
+				<th>조회수</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="dto : ${list}">
+				<td><span th:text="${dto.bid}"></span></td>
+				<td><span th:text="${dto.bname}"></span></td>
+				<td><span th:text="${dto.btitle}"></span></td>
+				<td><span th:text="${dto.bdate}"></span></td>
+				<td><span th:text="${dto.bhit}"></span></td>
+			</tr>
+		</tbody>
+		<tfoot>
+		<tr>
+			<td colspan="5"><a hrefs="write_view">글작성</a></td>
+		</tr>
+		</tfoot>
+
+	</table>
+
+
+
+</body>
+</html>
