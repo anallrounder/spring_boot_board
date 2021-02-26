@@ -21,8 +21,8 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@AllArgsConstructor
-@NoArgsConstructor
+//@AllArgsConstructor
+//@NoArgsConstructor
 @ToString
 public class BoardVO {
 	private int bid;
@@ -34,5 +34,22 @@ public class BoardVO {
 	private int bgroup;
 	private int bstep;
 	private int bindent;
+	
+	public BoardVO() {
+
+	}
+	
+	public BoardVO(int bid, String bname, String btitle, String bcontent, Date bdate, int bhit, int bgroup, int bstep,
+			int bindent) {
+		this.bid = bid;
+		this.bname = bname;
+		this.btitle = btitle;
+		this.bcontent = bcontent;
+		this.bdate = bdate;
+		this.bhit = bhit;
+		this.bgroup = bgroup;
+		this.bstep = bstep;
+		this.bindent = bindent;
+	}
 	
 }

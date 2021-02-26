@@ -46,12 +46,12 @@
 			<artifactId>mybatis-spring-boot-starter</artifactId>
 			<version>2.1.4</version>
 		</dependency>
-
+		
 		<!-- Thymeleaf -->
-		<dependency>
+ 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
-		</dependency>
+		</dependency> 
 
 		<!-- JSP, JSTL -->
 		<dependency>
@@ -63,7 +63,8 @@
 			<groupId>javax.servlet</groupId> 
 			<artifactId>jstl</artifactId> 
 		</dependency> 
-
+		<!-- 여기까지 -->
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -71,12 +72,7 @@
 			<optional>true</optional>
 		</dependency>
 		
-		<dependency>
-			<groupId>com.oracle.database.jdbc</groupId>
-			<artifactId>ojdbc8</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-		
+	
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>

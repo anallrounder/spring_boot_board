@@ -28,6 +28,7 @@ public class HomeController {
 		
 		model.addAttribute("board", board);
 		return "thymeleaf/index"; //타임리프로 넘기기 위해서 이렇게 작성함
+		
 	}
 	
 //	@GetMapping("/board")
