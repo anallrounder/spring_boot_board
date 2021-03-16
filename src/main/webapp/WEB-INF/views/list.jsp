@@ -57,8 +57,8 @@
 				</c:forEach>
 			<tfoot>
 				<tr>
-					<td scope="row" colspan="5" class="justify-content-end"><a
-						class="btn btn-primary mt-3" href="write_view" role="button">글작성</a></td>
+					<td scope="row" colspan="5" class="justify-content-end">
+					<a class="btn btn-primary mt-3" href="write_view" role="button">글작성</a></td>
 				</tr>
 			<tfoot>
 		</table>
